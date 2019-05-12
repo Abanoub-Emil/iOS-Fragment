@@ -13,6 +13,15 @@
 		028D652E2214044F00B2677E /* SwipeGestureTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 028D652C2214044F00B2677E /* SwipeGestureTutorial.xcdatamodeld */; };
 		028D65302214046000B2677E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028D652F2214046000B2677E /* Assets.xcassets */; };
 		028D65332214046000B2677E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028D65312214046000B2677E /* LaunchScreen.storyboard */; };
+		028D653D2214123000B2677E /* StoryBoardAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D653C2214123000B2677E /* StoryBoardAttributes.swift */; };
+		028D654C2214299A00B2677E /* FirstContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D654A2214299A00B2677E /* FirstContainer.swift */; };
+		028D654D2214299A00B2677E /* FirstContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028D654B2214299A00B2677E /* FirstContainer.xib */; };
+		028D6550221429D900B2677E /* FirstContainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D654E221429D900B2677E /* FirstContainerTableViewCell.swift */; };
+		028D6551221429D900B2677E /* FirstContainerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028D654F221429D900B2677E /* FirstContainerTableViewCell.xib */; };
+		02F3D5A62214379600F4562E /* SecondContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3D5A52214379600F4562E /* SecondContainer.swift */; };
+		02F3D5A8221437B100F4562E /* SecondContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F3D5A7221437B100F4562E /* SecondContainer.xib */; };
+		02F3D5AA22143D5900F4562E /* ThirdContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3D5A922143D5900F4562E /* ThirdContainer.swift */; };
+		02F3D5AC22143D6600F4562E /* ThirdContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F3D5AB22143D6600F4562E /* ThirdContainer.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		028D652F2214046000B2677E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		028D65322214046000B2677E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		028D65342214046000B2677E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028D653C2214123000B2677E /* StoryBoardAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardAttributes.swift; sourceTree = "<group>"; };
+		028D654A2214299A00B2677E /* FirstContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContainer.swift; sourceTree = "<group>"; };
+		028D654B2214299A00B2677E /* FirstContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstContainer.xib; sourceTree = "<group>"; };
+		028D654E221429D900B2677E /* FirstContainerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContainerTableViewCell.swift; sourceTree = "<group>"; };
+		028D654F221429D900B2677E /* FirstContainerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstContainerTableViewCell.xib; sourceTree = "<group>"; };
+		02F3D5A52214379600F4562E /* SecondContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContainer.swift; sourceTree = "<group>"; };
+		02F3D5A7221437B100F4562E /* SecondContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondContainer.xib; sourceTree = "<group>"; };
+		02F3D5A922143D5900F4562E /* ThirdContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdContainer.swift; sourceTree = "<group>"; };
+		02F3D5AB22143D6600F4562E /* ThirdContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdContainer.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,56 @@
 		028D65242214044F00B2677E /* SwipeGestureTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				028D65252214044F00B2677E /* AppDelegate.swift */,
-				028D65272214044F00B2677E /* ViewController.swift */,
-				028D65292214044F00B2677E /* Main.storyboard */,
-				028D652F2214046000B2677E /* Assets.xcassets */,
-				028D65312214046000B2677E /* LaunchScreen.storyboard */,
+				028D653A2214046B00B2677E /* SupportingFiles */,
+				028D653B2214120800B2677E /* Utils */,
+				028D653E2214217500B2677E /* View Controller */,
+				028D653F2214218C00B2677E /* View */,
 				028D65342214046000B2677E /* Info.plist */,
-				028D652C2214044F00B2677E /* SwipeGestureTutorial.xcdatamodeld */,
 			);
 			path = SwipeGestureTutorial;
+			sourceTree = "<group>";
+		};
+		028D653A2214046B00B2677E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				028D652F2214046000B2677E /* Assets.xcassets */,
+				028D65252214044F00B2677E /* AppDelegate.swift */,
+				028D65312214046000B2677E /* LaunchScreen.storyboard */,
+				028D652C2214044F00B2677E /* SwipeGestureTutorial.xcdatamodeld */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		028D653B2214120800B2677E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				028D653C2214123000B2677E /* StoryBoardAttributes.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		028D653E2214217500B2677E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				028D65272214044F00B2677E /* ViewController.swift */,
+				028D654A2214299A00B2677E /* FirstContainer.swift */,
+				028D654E221429D900B2677E /* FirstContainerTableViewCell.swift */,
+				02F3D5A52214379600F4562E /* SecondContainer.swift */,
+				02F3D5A922143D5900F4562E /* ThirdContainer.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		028D653F2214218C00B2677E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				028D654B2214299A00B2677E /* FirstContainer.xib */,
+				028D654F221429D900B2677E /* FirstContainerTableViewCell.xib */,
+				028D65292214044F00B2677E /* Main.storyboard */,
+				02F3D5A7221437B100F4562E /* SecondContainer.xib */,
+				02F3D5AB22143D6600F4562E /* ThirdContainer.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +184,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028D654D2214299A00B2677E /* FirstContainer.xib in Resources */,
+				02F3D5A8221437B100F4562E /* SecondContainer.xib in Resources */,
 				028D65332214046000B2677E /* LaunchScreen.storyboard in Resources */,
+				028D6551221429D900B2677E /* FirstContainerTableViewCell.xib in Resources */,
 				028D65302214046000B2677E /* Assets.xcassets in Resources */,
+				02F3D5AC22143D6600F4562E /* ThirdContainer.xib in Resources */,
 				028D652B2214044F00B2677E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028D6550221429D900B2677E /* FirstContainerTableViewCell.swift in Sources */,
+				02F3D5A62214379600F4562E /* SecondContainer.swift in Sources */,
 				028D652E2214044F00B2677E /* SwipeGestureTutorial.xcdatamodeld in Sources */,
+				028D653D2214123000B2677E /* StoryBoardAttributes.swift in Sources */,
 				028D65282214044F00B2677E /* ViewController.swift in Sources */,
+				02F3D5AA22143D5900F4562E /* ThirdContainer.swift in Sources */,
+				028D654C2214299A00B2677E /* FirstContainer.swift in Sources */,
 				028D65262214044F00B2677E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
